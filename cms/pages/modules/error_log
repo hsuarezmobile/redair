@@ -1,0 +1,26 @@
+[17-May-2019 00:11:51 UTC] PHP Fatal error:  Call to undefined method dataService::saveProfile() in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/settings_profile_add_action.php on line 11
+[21-May-2019 00:40:46 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 26
+[21-May-2019 00:40:46 UTC] PHP Warning:  substr() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 26
+[21-May-2019 00:40:46 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 27
+[21-May-2019 00:40:46 UTC] PHP Warning:  substr() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 27
+[21-May-2019 00:40:46 UTC] PHP Warning:  md5() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 28
+[21-May-2019 00:41:09 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 26
+[21-May-2019 00:41:09 UTC] PHP Warning:  substr() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 26
+[21-May-2019 00:41:09 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 27
+[21-May-2019 00:41:09 UTC] PHP Warning:  substr() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 27
+[21-May-2019 00:41:09 UTC] PHP Warning:  md5() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 28
+[21-May-2019 00:41:12 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 26
+[21-May-2019 00:41:12 UTC] PHP Warning:  substr() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 26
+[21-May-2019 00:41:12 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 27
+[21-May-2019 00:41:12 UTC] PHP Warning:  substr() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 27
+[21-May-2019 00:41:12 UTC] PHP Warning:  md5() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 28
+[21-May-2019 00:42:34 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 26
+[21-May-2019 00:42:34 UTC] PHP Warning:  substr() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 26
+[21-May-2019 00:42:34 UTC] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 27
+[21-May-2019 00:42:34 UTC] PHP Warning:  substr() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 27
+[21-May-2019 00:42:34 UTC] PHP Warning:  md5() expects parameter 1 to be string, array given in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 28
+[21-May-2019 00:46:14 UTC] PHP Warning:  copy(../../img/9ba062715fc8ac3fcf0e7ffbe12cabf3.jpg): failed to open stream: No such file or directory in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_add_action.php on line 21
+[24-May-2019 20:04:08 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/tumediaweb/public_html/beta/IKG/cms/pages/modules/blog_entry_edit_action.php on line 38
+[24-May-2019 20:12:02 UTC] PHP Catchable fatal error:  Object of class recordset_db could not be converted to string in /home/tumediaweb/public_html/beta/IKG/cms/webservices/dataService.php on line 271
+[24-May-2019 20:12:16 UTC] PHP Catchable fatal error:  Object of class recordset_db could not be converted to string in /home/tumediaweb/public_html/beta/IKG/cms/webservices/dataService.php on line 271
+[24-May-2019 22:15:47 UTC] PHP Catchable fatal error:  Object of class recordset_db could not be converted to string in /home/tumediaweb/public_html/beta/IKG/cms/webservices/dataService.php on line 271

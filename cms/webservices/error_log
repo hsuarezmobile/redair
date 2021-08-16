@@ -1,0 +1,2 @@
+[21-Aug-2019 00:22:36 UTC] PHP Fatal error:  Call to undefined method dataService::getActiveVitrinas() in /home/tumediawebdesarr/public_html/laser/cms/index.php on line 11
+[21-Aug-2019 00:22:44 UTC] PHP Fatal error:  Call to undefined method dataService::getActiveVitrinas() in /home/tumediawebdesarr/public_html/laser/cms/index.php on line 11
