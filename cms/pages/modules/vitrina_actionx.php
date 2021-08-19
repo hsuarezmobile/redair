@@ -29,8 +29,9 @@
 			$name = substr($archivo,0, strlen($archivo)-4);
 			$nombre_archivo = md5($archivo);
 			$name_arch = $nombre_archivo.".jpg";							
-		}		
+		}	
 		if ($archivo != ""){
+			$retorno = "";
 			if($tamano < 5024000){		
 				if (file_exists("../../../assets/img/slides/".$name_arch)){ // -> si existe el archivo te lo vuelas
 					@unlink("../../../assets/img/slides/".$name_arch);
@@ -39,16 +40,17 @@
 				if ($id == ""){
 					$dataServ->saveVitrina($nombre, $orden, $el_archivo, $activo);
 				}else{
-					$dataServ->updateVitrinax($nombre, $orden, $el_archivo, $activo, $id);	        
+					$retorno = $dataServ->updateVitrinax($nombre, $orden, $el_archivo, $activo, $id);	        
 				}
 			}
 		}else{
 			if ($id == ""){
 				$dataServ->saveVitrina($nombre, $orden, "", $activo);
 			}else{
-				$dataServ->updateVitrinax($nombre, $orden, "", $activo, $id);
+				$retorno = $dataServ->updateVitrinax($nombre, $orden, "", $activo, $id);
 			}
 		}		
-		echo json_encode(array("result"=>true, "response"=>"OK", "message"=>"Datos almacenados"));		
+		echo $retorno; die();
+		//echo json_encode(array("result"=>true, "response"=>"OK", "message"=>"Datos almacenados"));		
 	}
 ?>

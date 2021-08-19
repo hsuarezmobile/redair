@@ -110,7 +110,7 @@
                                     </div>
                                 </div>
                                 <div class="image wow fadeInRight animated">
-                                    <img src="assets/img/noticias/<?php echo $imagen ?>" class="img-responsive noticiaimg" alt="<?php echo $titulo ?>" title="<?php echo $titulo ?>" style="width: 1124px;height: 400px">
+                                    <img src="assets/img/noticias/<?php echo $imagen ?>" class="img-responsive noticiaimg" alt="<?php echo $titulo ?>" title="<?php echo $titulo ?>" style="width: 1124px;height: auto;">
                                 </div>
                             </div> 
 

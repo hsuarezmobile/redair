@@ -108,7 +108,7 @@
                             <div class="col-sm-6 col-md-3 p0">
                                 <div class="box-two proerty-item">
                                     <div class="item-thumb">
-                                        <a href="noticia_single.php?id=<?php echo $json_noticias->data[$x]->id ?>" ><img src="assets/img/noticias/<?php echo $json_noticias->data[$x]->img2 ?>" width="265px" height="225px"></a>
+                                        <a href="noticia_single.php?id=<?php echo $json_noticias->data[$x]->id ?>" ><img class="noticiaimagen" src="assets/img/noticias/<?php echo $json_noticias->data[$x]->img2 ?>"></a>
                                     </div>
 
                                     <div class="item-entry overflow" style="height: auto;">

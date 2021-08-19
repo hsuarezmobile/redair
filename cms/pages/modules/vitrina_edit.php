@@ -21,7 +21,7 @@ function validate() {
 			formData.append('activo', document.getElementById("activo").value);
 			formData.append('id', document.getElementById("id").value);
 			$.ajax({
-			   url : 'modules/vitrina_action.php',
+			   url : 'modules/vitrina_actionx.php',
 			   type : 'POST',
 			   data : formData,
 			   processData: false,
@@ -48,7 +48,7 @@ function validate() {
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <b>Editar noticia</b>&nbsp;|&nbsp;<a href="javascript:window.location='?m=vitrina';">Regresar</a>
+                            <b>Editar vitrina</b>&nbsp;|&nbsp;<a href="javascript:window.location='?m=vitrina';">Regresar</a>
                         </div>
                         <div class="panel-body">
                             <div class="row">
@@ -63,7 +63,7 @@ function validate() {
                                         </div>
                                         <div class="form-group">
                                             <label>Imagen actual</label>
-                                            <a href="../../../assets/img/slides/<?php echo $json_data->vitrinaList[0]->imagen ?>" target="blank">Haga click aca para ver la imagen actual</a>
+                                            <a href="../../assets/img/slides/<?php echo $json_data->vitrinaList[0]->imagen ?>" target="blank">Haga click aca para ver la imagen actual</a>
                                         </div>                                         
                                         <div class="form-group">
                                             <label>Imagen</label>

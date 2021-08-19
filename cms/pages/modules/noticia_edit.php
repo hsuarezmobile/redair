@@ -71,7 +71,7 @@ function validate() {
                                         </div>
                                         <div class="form-group">
                                             <label>Imagen pequeña actual</label>
-                                            <a href="../../../assets/img/noticias/<?php echo $json_data->noticiaList[0]->img2 ?>" target="blank">Haga click aca para ver la imagen actual</a>
+                                            <a href="../../../redair/assets/img/noticias/<?php echo $json_data->noticiaList[0]->img2 ?>" target="blank">Haga click aca para ver la imagen actual</a>
                                         </div>                                         
                                         <div class="form-group">
                                             <label>Imagen pequeña</label>
@@ -79,7 +79,7 @@ function validate() {
                                         </div>                                                         
                                         <div class="form-group">
                                             <label>Imagen grande actual</label>
-                                            <a href="../../../assets/img/noticias/<?php echo $json_data->noticiaList[0]->img ?>" target="blank">Haga click aca para ver la imagen actual</a>
+                                            <a href="../../../redair/assets/img/noticias/<?php echo $json_data->noticiaList[0]->img ?>" target="blank">Haga click aca para ver la imagen actual</a>
                                         </div>                                         
                                         <div class="form-group">
                                             <label>Imagen grande</label>

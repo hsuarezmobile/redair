@@ -374,7 +374,6 @@ class dataService{
 	public function saveVitrina($nombre, $orden, $imagen, $activo){
 		$this->rs_db_1 = null;
 		$this->row_db_1 = null;
-		$array_profile = array();
 		$this->doConnect();
 		$this->rs->insert("vitrinas", "vitrina_nombre, vitrina_img, vitrina_orden, vitrina_activo", "'{$nombre}', '{$imagen}', '{$orden}', '{$activo}'", $this->link);
 		$this->doDisconnect();
@@ -384,16 +383,30 @@ class dataService{
 	public function updateVitrina($nombre, $orden, $imagen, $activo, $id){
 		$this->rs_db_1 = null;
 		$this->row_db_1 = null;
-		$array_profile = array();
 		$this->doConnect();
 		if ($imagen != ""){
-		    $this->rs->update("vitrinas", "vitrina_nombre = '{$nombre}', vitrina_orden = '{$orden}', vitrina_img = '{$imagen}', vitrina_activo = '{$activo}'", "vitrina_id = {$id}", $this->link);
+			$this->rs->update("vitrinas", "vitrina_nombre = '{$nombre}', vitrina_orden = '{$orden}', vitrina_img = '{$imagen}', vitrina_activo = '{$activo}'", "vitrina_id = ".$id, $this->link);
 		}else{
-		    $this->rs->update("vitrinas", "vitrina_nombre = '{$nombre}', vitrina_orden = '{$orden}', vitrina_activo = '{$activo}'", "vitrina_id = {$id}", $this->link);
+		    $this->rs->update("vitrinas", "vitrina_nombre = ''{$nombre}', vitrina_orden = '{$orden}', vitrina_activo = '{$activo}'", "vitrina_id = ".$id, $this->link);
 		}
+		$query = $this->rs->query;
 		$this->doDisconnect();
-		return json_encode(array("result"=>true, "response"=>"OK", "message"=>"Datos actualizados"));
+		return json_encode(array("result"=>true, "response"=>"OK", "message"=>"Datos actualizados" . $query));
 	}
+	// actualizar vitrina
+	public function updateVitrinax($nombre, $orden, $imagen, $activo, $id){
+		$this->rs_db_1 = null;
+		$this->row_db_1 = null;
+		$this->doConnect();
+		if ($imagen != ""){
+			$this->rs->update("vitrinas", "vitrina_nombre = '{$nombre}', vitrina_orden = '{$orden}', vitrina_img = '{$imagen}', vitrina_activo = '{$activo}'", " vitrina_id = ".$id, $this->link);
+		}else{
+		    $this->rs->update("vitrinas", "vitrina_nombre = '{$nombre}', vitrina_orden = '{$orden}', vitrina_activo = '{$activo}'", " vitrina_id = ".$id, $this->link);
+		}
+		$query = $this->rs->query;
+		$this->doDisconnect();
+		return json_encode(array("result"=>true, "response"=>"OK", "message"=>"Datos actualizados" . $query));
+	}	
 	// obtener dados de una vitrina por id
 	public function getVitrinaById($id){
 		$this->rs_db_1 = null;
@@ -443,9 +456,9 @@ class dataService{
 		$query = "";
 		$this->doConnect();
 		if ($imagen != ""){
-		    $this->rs->update("tarifas", "tarifa_nombre = '{$nombre}', tarifa_destino = '{$destino}', tarifa_monto = '{$monto}', tarifa_img = '{$imagen}', tarifa_orden = '{$orden}', tarifa_activo = '{$activo}'", "tarifa_id = {$id}", $this->link);
+		    $this->rs->update("tarifas", "tarifa_nombre = '{$nombre}', tarifa_destino = '{$destino}', tarifa_monto = '{$monto}', tarifa_img = '{$imagen}', tarifa_orden = '{$orden}', tarifa_activo = '{$activo}'", " tarifa_id = {$id}", $this->link);
 		}else{
-		    $this->rs->update("tarifas", "tarifa_nombre = '{$nombre}', tarifa_destino = '{$destino}', tarifa_monto = '{$monto}', tarifa_orden = '{$orden}', tarifa_activo = '{$activo}'", "tarifa_id = {$id}", $this->link);
+		    $this->rs->update("tarifas", "tarifa_nombre = '{$nombre}', tarifa_destino = '{$destino}', tarifa_monto = '{$monto}', tarifa_orden = '{$orden}', tarifa_activo = '{$activo}'", " tarifa_id = {$id}", $this->link);
 		}
 		$query = $this->rs->query;
 		$this->doDisconnect();
@@ -508,7 +521,7 @@ class dataService{
 		$this->row_db_1 = null;
 		$array_profile = array();
 		$this->doConnect();
-		$this->rs->borrar("noticias", "noticia_id = ".$id);
+		$this->rs->borrar("noticias", " noticia_id = ".$id);
 		$this->doDisconnect();
 		return json_encode(array("result"=>true, "response"=>"OK", "message"=>"noticia borrada"));
 	}
